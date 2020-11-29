@@ -1,0 +1,77 @@
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Covered+By+Your+Grace&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cinzel:wght@700&family=Covered+By+Your+Grace&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="" method="POST" id="form">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="" id="name" ><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="" id="email" ><span class="barra"></span>
+                <label for="">Email</label>
+            </div>
+            <div class="grupo">
+                <input type="password" name="" id="password"><span class="barra"></span>
+                <label for="">Password</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="" id="direction"><span class="barra"></span>
+                <label for="">Direccion</label>
+            </div>
+            
+            <div class="grupo"> 
+            <select name="" id="categoria">
+                <option value="" selected disabled>Seleccione Su Categoria Preferida</option>
+                <option value="terror">Terror</option>
+                <option value="animalista">Animalista</option>
+                <option value="abstracto">Abstracto</option>
+                <option value="futurista">Futurista</option>
+    
+            </select>
+
+           </div>
+        
+           <div class="grupo">
+            <input type="checkbox" name="tecnologia" value="Masculino">
+            Masculino 
+            <input type="checkbox" name="tecnologia"value="Femenino" >
+            Femenino
+            
+         </div>
+
+
+         
+            
+
+         
+
+
+         
+          
+
+
+            
+            <button type="submit">Registrate Ya!</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
+
+
+{% endblock %}

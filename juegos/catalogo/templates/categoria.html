@@ -1,0 +1,235 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Categorias de juego</title>
+
+    {% load static %}
+    
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+ 
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/album.css' %}" rel="stylesheet">
+    
+  </head>
+  
+    <header>
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="{% url 'game_create' %}" aria-label="Product">Agregar Recomendacion</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'index' %}">Inicio</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'categoria' %}">Categorías de juegos.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'mjrjuego' %}">Juegos Competitivos.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'retro' %}">Juegos Rpg.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'games' %}">Recomendaciones de usuarios.</a>
+        </div>
+      </nav>
+      
+
+    </header>
+<body class="bg-dark">
+<main role="main" >
+
+  
+  {% block content %}
+
+      <div class="container-xl col-md-12 ">
+       <h1 class="text-center bg-secondary text-light ">Tres juegos de miedo mas jugados a la fecha </h1>
+       <h5 class="text-center bg-primary text-light ">Estos tres juegos son los mas valorados por los players</h5> 
+      </div>
+    <div class="album py-5 ">
+    <div class="container">
+      <div class="row">       
+        <div class="col-md-4">
+          <div class="card mb-4 bg-light" > 
+            <img class="img-fluid" src="{% static 'img/pha.jpg'%}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Phasmophobia.</p>
+              <p class="card-text small text-info">Este juego es cooperativo(4), trata de una empresa que se dedica a casar fantasmas, cada trabajo que realizan con exito obtendran un pago, en el cual deben ahorrar para que el proximo trabajo puedan comprar herramientas mas sofisticadas y puedan hacer su trabajo cada vez mejor y con fantasmas cada vez mas peligrosos. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/739630/Phasmophobia/?l=latam" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary ">Comprar</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4 bg-light">
+            <img class="img-fluid" src="{% static 'img/day.jpg'%}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Dead by Daylight.</p>
+              <p class="card-text small text-info">Dead by Daylight es un juego de horror de multijugador (4 contra 1) en el que un jugador representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que intentan escapar de él para evitar ser capturados y asesinados. <br><br><br><br><br> </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="img-fluid" src="{% static 'img/pac.jpg'%}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Pacify.</p>
+              <p class="card-text small text-info">Supuestamente hay un mal dentro de esa casa. Algo acerca de una antigua funeraria que ofrece una última oportunidad de hablar con tus seres queridos muertos. Algo más sobre luces, risas, una niña, personas desaparecidas, etc. Sabes lo mismo que todos. Coge un equipo y revisa el lugar. <br><br><br><br>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a href="https://store.steampowered.com/app/967050/Pacify/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container-xl col-md-12 ">
+       <h1 class="text-center bg-secondary text-light ">Tres juegos de accion mas jugado a la fecha</h1> 
+       <h5 class="text-center bg-primary text-light ">Estos tres juegos de accion multijugador llegan hacer muy competitivos</h5> 
+      </div>
+  <div class="album py-5 ">
+    <div class="container">
+      <div class="row ">       
+        <div class="col-md-4">
+          <div class="card mb-4 bg-light" > 
+            <img class="img-fluid" src="{% static 'img/pug.jpg'%}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">PLAYERUNKNOWN'S BATTLEGROUNDS.</p>
+              <p class="card-text small text-info">PLAYERUNKNOWN’S BATTLEGROUNDS es un shooter basado en el modo Battle Royale que está siendo desarrollado a través de la retroalimentación con la comunidad. Comenzando de la nada, los usuarios tienen que luchar uno contra el otro para localizar armas y suministros para ser el único sobreviviente... <br><br><br>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4 bg-light">
+            <img class="img-fluid" src="{% static 'img/cs.jpg'%}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Counter-Strike: Global Offensive.</p>
+              <p class="card-text small text-info">Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años. CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.). <br><br><br>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="img-fluid" src="{% static 'img/war.jpg' %}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Call of Duty WARZONE.</p>
+              <p class="card-text small text-info">Este juego es multiplayer, tiene un mod Battle Royal que es gratis en el cual dentro deben sobrevir en equipos, trios, duos o solos, con 150 personsa en competencia, tambien tenemos mods multijugador que pero para acceder se debe comprar el juego.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a href="https://www.callofduty.com/es/warzone" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+      <div class="container-xl col-md-12 ">
+       <h1 class="text-center bg-secondary text-light ">Tres juegos de sobrevivecnia mas jugado a la fecha</h1> 
+       <h5 class="text-center bg-primary text-light ">Estos tres juegos de sobrevivencia multijugador te lleva a tomarte muy enserio el juego</h5> 
+      </div>
+  <div class="album py-5 ">
+    <div class="container">
+      <div class="row ">       
+        <div class="col-md-4">
+          <div class="card mb-4 bg-light" > 
+            <img class="img-fluid" src="{% static 'img/rus.jpg' %}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Rust.</p>
+              <p class="card-text small text-info">El único objetivo en Rust es sobrevivir: superar luchas como el hambre, la sed y el frío. Hacer fuego. Construir un refugio. Mata animales. Protéjase de otros jugadores. <br><br><br>  </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/252490/Rust/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card mb-4 bg-light">
+            <img class="img-fluid" src="{% static 'img/dayz.jpg' %}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">Dayz.</p>
+              <p class="card-text small text-info">¿Cuánto podrás sobrevivir en un mundo posapocalíptico? Una tierra plagada de zombis infectados donde compites con otros supervivientes por recursos escasos. ¿Colaborarás con desconocidos y permaneceréis juntos? ¿O irás de lobo solitario para evitar traiciones? Esto es DayZ.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://store.steampowered.com/app/221100/DayZ/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="img-fluid" src="{% static 'img/fore.jpg' %}" alt="Chania" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></> 
+            <div class="card-body bg-dark">
+              <p class="card-text text-primary">The Forest.</p>
+              <p class="card-text small text-info">Como el único superviviente de un accidente de avión de pasajeros, te encuentras en un bosque misterioso luchando por mantenerte con vida contra una sociedad de mutantes caníbales. Construye, explora y sobrevive en este aterrador simulador de terror de supervivencia en primera persona.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a href="https://store.steampowered.com/app/242760/The_Forest/" target="_blank" > <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    
+</main>
+
+<footer class="text-muted">
+  <div class="container bg-dark">
+    <p class="float-right">
+      <a href="#">Presione para subir</a>
+    </p>
+    <p>Si quieres mas informacion de este tipo,te recomiendo que ingreses a este sitio web que te dejare en azul aca abajo</p>
+    <p>Mas informacion sobre video juegos? <a href="https://store.steampowered.com/" target="_blank">Presiona aqui.</a> </p>
+  </div>
+  
+</footer>
+</body>
+</html>
+
+{% endblock %}

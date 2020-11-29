@@ -1,0 +1,55 @@
+#color1{
+    background-color: black
+}
+
+#borde{
+    border-style: outset;
+    border-color: cornsilk;
+}
+
+#borde2{
+    border-style: solid;
+    border-color: cornsilk;
+}
+
+
+h2{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+
+#black{
+    color: black;
+}
+
+#color{
+    background-color: burlywood;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#blanco{
+    color: aliceblue;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    font-family: 'Kaushan Script', cursive;
+
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }

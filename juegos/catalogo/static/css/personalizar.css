@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Barcode+128+Text&family=Lily+Script+One&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kaushan+Script&display=swap');
+
+#conejo{
+    background-color:transparent;
+}
+
+#photoabajo{
+    background-color:rgb(5, 5, 5);
+    
+}
+
+
+
+#perrito{
+
+
+background-color:rgb(0, 0, 0);
+
+
+}
+
+
+#textphoto{
+
+    font-family: 'Kaushan Script', cursive;
+    
+
+}
+
+#pajarito{
+    background-color: rgb(12, 11, 12);
+}
+
+
+
+h1{
+
+
+    display: inline-block;
+    position: relative;
+    color:black;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    
+    
+}
+
+h1::after,h1::before{
+
+    content:'';
+    position:absolute;
+    width:130px;
+    height:4px;
+    background-color: black;
+    background-color:currentColor;
+    top:0.6em;
+    transform: scale(0);
+    transition: all 0.3s ease-in;
+
+
+
+}
+h1:hover::before,h1:hover::after{
+    transform: scale(1);
+}
+
+h1::before{
+    left: -140px;
+}
+h1::after{
+    right: -140px;
+}
+
+
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    font-family: 'Kaushan Script', cursive;
+
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+  #bordesito{
+
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: stretch;
+  }

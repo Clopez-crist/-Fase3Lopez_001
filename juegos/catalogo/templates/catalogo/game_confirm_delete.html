@@ -1,0 +1,13 @@
+{% extends base_generic.html %}
+
+{% block content %}
+
+<h1>Eliminar información de Videojuego.</h1>
+<p> ¿Estás seguro que quieres eliminar la información de éste juego: {{game}} ?</p>
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" action="Delete">
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <head>
+    <h1 id=black >Lista de Recomendaciones.</h1>
+
+    
+    <link rel="stylesheet" href="css/styles">
+    </head>
+    {% load static %}
+    <body id=color1>
+    {% if game_list %}
+    <ul>
+
+      {% for game in game_list %}
+      <li>
+        <a href="{{ game.get_absolute_url }}">{{ game.nombre }}</a> ({{game.creador}}) 
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    {% else %}
+      <p>No hay juegos en el sistema.</p>
+    {% endif %}       
+  </body>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Titulo: {{ game.nombre }}</h1>
+
+    <p><strong>Creador:</strong> <a href="">{{ game.creador }}</a></p>
+    <p><strong>Juego:</strong> {{game.nombre}}</p>
+    <p><strong>Descripción:</strong> {{game.descripcion}}</p>
+
+{% endblock %}

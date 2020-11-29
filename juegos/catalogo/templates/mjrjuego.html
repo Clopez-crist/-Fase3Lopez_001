@@ -1,0 +1,278 @@
+
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    
+
+    <title>VideoJuegos</title>
+
+    {% load static %}     
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"> 
+    <link href="{% static 'css/album.css' %}" rel="stylesheet">   
+    <!-- Bootstrap core CSS -->
+<link href="% static '../assets/dist/css/bootstrap.min.css' %" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-dark">
+    <header>
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="{% url 'game_create' %}" aria-label="Product">Agregar Recomendacion</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'index' %}">Inicio</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'categoria' %}">Categorías de juegos.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'mjrjuego' %}">Juegos Competitivos.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'retro' %}">Juegos Rpg.</a>
+        <a class="py-2 d-none d-md-inline-block" href="{% url 'games' %}">Recomendaciones de usuarios.</a>
+        </div>
+      </nav>
+      
+
+    </header>
+
+
+
+<main role="main" class="bg-dark">
+
+  <section class="jumbotron text-center"id="pajarito" class="bg-dark">
+    <div class="container">
+      <h1 class="lines-effect">Mejores Lanzamiento De Videojuegos 2020 PC/XBOX/PS4/NINTENDO</h1>
+      <p class="lead text-muted">.</p>
+      <p>
+        <a href="{% url 'formulario' %}" class="btn btn-primary my-2">Registrate Gratis! Para Mas Info.</a>  
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5" class="bg-dark">
+    <div class="container" id="conejo">
+
+      <div class="row">       
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{% static 'img/Cyberpunk.jpg'%}" class="img-fluid"  alt="img" width="100%" height="225" ></img> 
+            <div class="card-body" id="photoabajo">
+              <p class="card-text"id="textphoto">CyberPunk2077.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.cyberpunk.net/us/es/pre-order"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                  <a href="https://es.wikipedia.org/wiki/Cyberpunk_2077"><button type="button" class="btn btn-sm btn-outline-secondary">Game Info</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+         
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="img-fluid" src="{% static 'img/dragon Ball kakarot.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+            <div class="card-body" id="photoabajo">
+              <p class="card-text" id="textphoto">Dragon Ball Z Kakarot</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://www.zmart.cl/DragonBall"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                  <a href="https://es.bandainamcoent.eu/dragon-ball/dragon-ball-z-kakarot"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+       
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img class="img-fluid" src="{% static 'img/Fall guys.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+        <div class="card-body" id="photoabajo">
+          <p class="card-text"id="textphoto">Fall Guys</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://www.playstation.com/es-cl/games/fall-guys-ultimate-knockout-ps4/"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+              <a href="https://es.wikipedia.org/wiki/Fall_Guys:_Ultimate_Knockout"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+  <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+      <img class="img-fluid" src="{% static 'img/Marvel avengers.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+      <div class="card-body"id="photoabajo">
+        <p class="card-text"id="textphoto">Marvel Avengers.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <a href="https://store.steampowered.com/app/997070/Marvels_Avengers/?l=spanish"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+            <a href="https://avengers.square-enix-games.com/es-es/"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img class="img-fluid" src="{% static 'img/Microsoft-Flight-Simulator.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+        <div class="card-body"id="photoabajo">
+          <p class="card-text"id="textphoto">Microsoft Flight Simulator.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://www.microsoft.com/es-cl/p/microsoft-flight-simulator-standard/9nxn8gf8n9ht?activetab=pivot:overviewtab"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+              <a href="https://es.wikipedia.org/wiki/Microsoft_Flight_Simulator_2020"><button type="button" class="btn btn-sm btn-outline-secondary">Mas info</button></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img class="img-fluid" src="{% static 'img/Minecraft dungeons.jpeg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+          <div class="card-body"id="photoabajo">
+            <p class="card-text"id="textphoto">Minecraft Dungeons.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://www.minecraft.net/es-es/store/minecraft-dungeons-windows"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                <a href="https://es.wikipedia.org/wiki/Minecraft_Dungeons"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="img-fluid" src="{% static 'img/Paper Mario the origami King.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+            <div class="card-body"id="photoabajo">
+              <p class="card-text"id="textphoto">Paper Mario The origami King.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://simple.ripley.cl/paper-mario-the-origami-king-2000379485772p?s=o"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                  <a href="https://es.wikipedia.org/wiki/Paper_Mario:_The_Origami_King"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="img-fluid" src="{% static 'img/pokemon-home.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+              <div class="card-body"id="photoabajo">
+                <p class="card-text"id="textphoto">Pokemon - Home.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://www.nintendo.es/Juegos/Programas-descargables-Nintendo-Switch/Pokemon-HOME-1717896.html"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                    <a href="https://www.xataka.com/basics/pokemon-home-que-como-usarlo-tu-movil-como-pasar-tus-pokemon-nintendo-switch#:~:text=juego%20que%20tengas.-,Qué%20es%20Pokémon%20Home,estos%20son%20de%20diferentes%20plataformas."><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="img-fluid" src="{% static 'img/resident evil 3 remake.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+                <div class="card-body"id="photoabajo">
+                  <p class="card-text"id="textphoto">Resident Evil 3 Remake.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="https://www.zmart.cl/ResidentEvil"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                      <a href="https://es.wikipedia.org/wiki/Resident_Evil_3_(videojuego_de_2020)"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                  <img class="img-fluid" src="{% static 'img/warcraft reforged.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+                  <div class="card-body"id="photoabajo">
+                    <p class="card-text"id="textphoto">warcraft iii reforged.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://playwarcraft3.com/es-mx"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                        <a href="https://es.wikipedia.org/wiki/Warcraft_III:_Reforged"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="img-fluid" src="{% static 'img/warface.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+                    <div class="card-body"id="photoabajo">
+                      <p class="card-text"id="textphoto">warface</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <a href="https://www.playstation.com/es-cl/games/warface-ps4/"><button type="button" class="btn btn-sm btn-outline-secondary">Descargar</button></a>
+                          <a href="https://vandal.elespanol.com/juegos/pc/warface/13625#p-13"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <img class="img-fluid" src="{% static 'img/wath dog legion.jpg'%}" alt="img" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false"></>
+                      <div class="card-body"id="photoabajo">
+                        <p class="card-text"id="textphoto">Watch Dog Legion.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="https://vandal.elespanol.com/juegos/pc/warface/13625#p-13"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                            <a href="https://es.wikipedia.org/wiki/Watch_Dogs:_Legion"><button type="button" class="btn btn-sm btn-outline-secondary">Mas Info</button></a>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+  </div>
+</div>
+<div>
+
+
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Volver Al Inicio Del Album</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+
+{% extends "base_generic.html" %}
+{% block content %}
+
+<h1>Agregar Recomendacion de Videojuego.</h1>
+{% load static %}
+<body id=color1>
+    
+
+<br><br><br><br><br>
+<div class="container d-flex flex-column flex-md-row justify-content-between" id="color1">
+<form action="" method="post">
+    {%csrf_token%}
+    <table>
+        {{form.as_table}}
+
+    </table>
+    <input type="submit" value="Enviar">
+
+</form>
+</div>
+</body>
+{% endblock %}
